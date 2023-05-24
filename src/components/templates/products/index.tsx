@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './style.module.css'
 
 interface IProductPageProps {
@@ -8,7 +7,7 @@ interface IProductPageProps {
   children: React.ReactNode
 }
 
-const ProductPageTemplate: React.FC<IProductPageProps> = (props) => {
+export const ProductPageTemplate: React.FC<IProductPageProps> = (props) => {
   return (
     <div className={styles.wholeContainer}>
       {props.sidebar}
@@ -20,5 +19,3 @@ const ProductPageTemplate: React.FC<IProductPageProps> = (props) => {
     </div>
   )
 }
-
-export default ProductPageTemplate

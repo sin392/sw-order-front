@@ -1,9 +1,9 @@
-import BreadCrumbs from '@/components/molecules/breadcrumbs'
+import { BreadCrumbs } from '@/components/molecules/breadcrumbs'
 import styles from './style.module.css'
 
 interface IHeader {}
 
-const Header: React.FC<IHeader> = (props) => {
+export const Header: React.FC<IHeader> = (props) => {
   return (
     <div>
       <header className={styles.header}>
@@ -13,5 +13,3 @@ const Header: React.FC<IHeader> = (props) => {
     </div>
   )
 }
-
-export default Header

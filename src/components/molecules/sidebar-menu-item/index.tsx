@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './style.module.css'
 
 export interface ISideBarMenuItemProps {
@@ -6,7 +5,7 @@ export interface ISideBarMenuItemProps {
   text: string
 }
 
-const SideBarMenuItem: React.FC<ISideBarMenuItemProps> = ({ icon, text }) => {
+export const SideBarMenuItem: React.FC<ISideBarMenuItemProps> = ({ icon, text }) => {
   return (
     <div className={styles.container}>
       {icon && <div>{icon}</div>}
@@ -14,5 +13,3 @@ const SideBarMenuItem: React.FC<ISideBarMenuItemProps> = ({ icon, text }) => {
     </div>
   )
 }
-
-export default SideBarMenuItem

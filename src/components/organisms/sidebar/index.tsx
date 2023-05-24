@@ -1,12 +1,11 @@
-import React from 'react'
 import styles from './style.module.css'
-import SideBarMenuItem, { ISideBarMenuItemProps } from '@/components/molecules/sidebar-menu-item'
+import { SideBarMenuItem, ISideBarMenuItemProps } from '@/components/molecules/sidebar-menu-item'
 
 interface ISideBarProps {
   items: ISideBarMenuItemProps[]
 }
 
-const SideBar: React.FC<ISideBarProps> = ({ items }) => {
+export const SideBar: React.FC<ISideBarProps> = ({ items }) => {
   return (
     <div className={styles.sidebar}>
       <h1 className={styles.logoContainer}>SWORD</h1>
@@ -22,5 +21,3 @@ const SideBar: React.FC<ISideBarProps> = ({ items }) => {
     </div>
   )
 }
-
-export default SideBar

@@ -1,11 +1,10 @@
-import React from 'react'
 import styles from './style.module.css'
-import ProductPageTemplate from '@/components/templates/products'
-import SideBar from '@/components/organisms/sidebar'
-import Header from '@/components/organisms/header'
-import Footer from '@/components/organisms/footer'
-import ItemList from '@/components/organisms/item-list'
-import ProductRepository from '@/infra/repository/product'
+import { ProductPageTemplate } from '@/components/templates/products'
+import { SideBar } from '@/components/organisms/sidebar'
+import { Header } from '@/components/organisms/header'
+import { Footer } from '@/components/organisms/footer'
+import { ItemList } from '@/components/organisms/item-list'
+import { ProductRepository } from '@/infra/repository/product'
 
 interface IProductPageProps {}
 
@@ -25,7 +24,7 @@ const ITEM_LIST = [
   { name: 'Item5' },
 ]
 
-const ProductPage: React.FC<IProductPageProps> = (props) => {
+export const ProductPage: React.FC<IProductPageProps> = (props) => {
   const productRepo = new ProductRepository()
   const badges = productRepo.findByCategory(1)
   const stampBooks = productRepo.findByCategory(2)
@@ -44,5 +43,3 @@ const ProductPage: React.FC<IProductPageProps> = (props) => {
     </ProductPageTemplate>
   )
 }
-
-export default ProductPage

@@ -4,7 +4,7 @@ export interface IBreadCrumbsProps {
   items: string[]
 }
 
-const BreadCrumbs: React.FC<IBreadCrumbsProps> = ({ items }) => {
+export const BreadCrumbs: React.FC<IBreadCrumbsProps> = ({ items }) => {
   return (
     <div className={styles.container}>
       {items.map((item, index) => (
@@ -15,5 +15,3 @@ const BreadCrumbs: React.FC<IBreadCrumbsProps> = ({ items }) => {
     </div>
   )
 }
-
-export default BreadCrumbs

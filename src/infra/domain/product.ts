@@ -1,4 +1,4 @@
-export default class Product {
+export class Product {
   name: string
   unitPrice: number
   category: number

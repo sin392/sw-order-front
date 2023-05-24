@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import styles from './style.module.css'
 
@@ -7,7 +6,7 @@ export interface IItemListItemProps {
   imgSrc?: string
 }
 
-const ItemListItem: React.FC<IItemListItemProps> = ({ name, imgSrc }) => {
+export const ItemListItem: React.FC<IItemListItemProps> = ({ name, imgSrc }) => {
   return (
     <div className={styles.container}>
       {
@@ -19,5 +18,3 @@ const ItemListItem: React.FC<IItemListItemProps> = ({ name, imgSrc }) => {
     </div>
   )
 }
-
-export default ItemListItem

@@ -1,7 +1,6 @@
 import { NextPage } from 'next'
-import React from 'react'
 
-import ProductPage from '@/components/pages/products'
+import { ProductPage } from '@/components/pages/products'
 
 interface IProductPageProps {}
 

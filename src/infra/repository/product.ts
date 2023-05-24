@@ -1,4 +1,4 @@
-import Product from '@/infra/domain/product'
+import { Product } from '@/infra/domain/product'
 
 const ITEM_SOURCE = [
   { name: 'A店 缶バッジ', unitPrice: 300, category: 1, imgSrc: undefined },
@@ -16,7 +16,7 @@ const ITEM_SOURCE = [
 ]
 
 // TODO: 非同期化
-export default class ProductRepository {
+export class ProductRepository {
   findALL(): Product[] {
     return ITEM_SOURCE.map(
       (item) => new Product(item.name, item.unitPrice, item.category, item.imgSrc)
