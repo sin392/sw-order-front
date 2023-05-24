@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  background-color: whitesmoke;
+}
+
+.label {
+  font-size: 20px;
+  margin-bottom: 8px;
+}

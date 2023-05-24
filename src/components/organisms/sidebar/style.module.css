@@ -1,0 +1,50 @@
+.sidebar {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: whitesmoke;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.15);
+}
+
+.logoContainer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.userContainer {
+  width: 200px;
+  /* height: 160px; */
+
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+
+  background-color: rgb(230, 230, 230);
+}
+
+.userImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  background-color: whitesmoke;
+}
+
+.menuContainer {
+  flex-grow: 1;
+  width: 100%;
+  padding: 40px;
+}
+
+.menuContainer > div {
+  font-size: 24px;
+  margin-bottom: 8px;
+  padding: 0 4px;
+  /* border: 1px solid; */
+}

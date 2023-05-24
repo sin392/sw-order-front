@@ -1,0 +1,17 @@
+.wholeContainer {
+  display: flex;
+}
+
+.mainContainer {
+  flex-grow: 1;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contentContainer {
+  flex-grow: 1;
+  padding: 20px;
+}

@@ -1,0 +1,24 @@
+.container {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.imgContainer {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: lightgrey;
+  color: whitesmoke;
+  font-size: 12px;
+}
+
+.name {
+  font-size: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

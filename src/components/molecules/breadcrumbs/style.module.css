@@ -1,0 +1,13 @@
+.container {
+  height: 32px;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+
+  color: gray;
+}
+
+.item:not(:last-child)::after {
+  content: '>';
+  margin: 0 4px;
+}
