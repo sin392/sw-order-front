@@ -7,6 +7,10 @@
   color: gray;
 }
 
+.item {
+  display: flex;
+}
+
 .item:not(:last-child)::after {
   content: '>';
   margin: 0 4px;

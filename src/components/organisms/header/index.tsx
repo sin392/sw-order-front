@@ -9,7 +9,12 @@ export const Header: React.FC<IHeader> = (props) => {
       <header className={styles.header}>
         <div>テストサイト</div>
       </header>
-      <BreadCrumbs items={['Page1', 'Page2', 'Page3']} />
+      <BreadCrumbs
+        items={[
+          { text: 'home', href: '/' },
+          { text: 'products', href: '/products' },
+        ]}
+      />
     </div>
   )
 }
