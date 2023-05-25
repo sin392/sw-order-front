@@ -1,7 +1,8 @@
-import { Product } from '@/infra/domain/product'
+import { Product } from '@/domain/model/product'
+import { IProductRepository } from '@/domain/repository/product'
 
 const ITEM_SOURCE = [
-  { name: 'A店 缶バッジ', unitPrice: 300, category: 1, imgSrc: undefined },
+  { name: 'A店 缶バッジ', unitPrice: 300, category: 1, imgSrc: '/badge_sample.webp' },
   { name: 'B店 缶バッジ', unitPrice: 300, category: 1, imgSrc: undefined },
   { name: 'C店 缶バッジ', unitPrice: 300, category: 1, imgSrc: undefined },
   { name: 'D店 缶バッジ', unitPrice: 300, category: 1, imgSrc: undefined },
@@ -16,7 +17,7 @@ const ITEM_SOURCE = [
 ]
 
 // TODO: 非同期化
-export class ProductRepository {
+export class ProductRepository implements IProductRepository {
   findALL(): Product[] {
     return ITEM_SOURCE.map(
       (item) => new Product(item.name, item.unitPrice, item.category, item.imgSrc)

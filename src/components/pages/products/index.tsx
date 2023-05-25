@@ -1,3 +1,11 @@
+import {
+  BsFillBagFill,
+  BsFillHouseFill,
+  BsFillPersonFill,
+  BsFillFileTextFill,
+  BsFillQuestionCircleFill,
+} from 'react-icons/bs'
+
 import styles from './style.module.css'
 import { ProductPageTemplate } from '@/components/templates/products'
 import { SideBar } from '@/components/organisms/sidebar'
@@ -9,11 +17,11 @@ import { ProductRepository } from '@/infra/repository/product'
 interface IProductPageProps {}
 
 const SIDEBAR_MENUS = [
-  { text: '商品' },
-  { text: '店舗' },
-  { text: 'ユーザ' },
-  { text: '注文' },
-  { text: 'ヘルプ' },
+  { text: '商品', icon: <BsFillBagFill /> },
+  { text: '店舗', icon: <BsFillHouseFill /> },
+  { text: 'ユーザ', icon: <BsFillPersonFill /> },
+  { text: '注文', icon: <BsFillFileTextFill /> },
+  { text: 'ヘルプ', icon: <BsFillQuestionCircleFill /> },
 ]
 
 const ITEM_LIST = [

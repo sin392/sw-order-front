@@ -1,4 +1,12 @@
 .container {
   display: flex;
   gap: 8px;
+  padding: 0 4px;
+
+  font-size: 24px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
 }
