@@ -2,9 +2,7 @@ import { NextPage } from 'next'
 
 import { ProductPage } from '@/components/pages/products'
 
-interface IProductPageProps {}
-
-const ActualProductPage: NextPage<IProductPageProps> = (props) => {
+const ActualProductPage: NextPage = () => {
   return <ProductPage />
 }
 

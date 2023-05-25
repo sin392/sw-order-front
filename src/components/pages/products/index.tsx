@@ -1,5 +1,5 @@
 import styles from './style.module.css'
-import { ProductPageTemplate } from '@/components/templates/products'
+import { BasePageTemplate } from '@/components/templates/base'
 import { SideBar } from '@/components/organisms/sidebar'
 import { Header } from '@/components/organisms/header'
 import { Footer } from '@/components/organisms/footer'
@@ -14,12 +14,12 @@ export const ProductPage: React.FC<IProductPageProps> = () => {
   const stampBooks = productRepo.findByCategory(2)
   const others = productRepo.findByCategory(0)
   return (
-    <ProductPageTemplate sidebar={<SideBar />} header={<Header />} footer={<Footer />}>
+    <BasePageTemplate sidebar={<SideBar />} header={<Header />} footer={<Footer />}>
       <div className={styles.listContainer}>
         <ItemList label='缶バッジ' items={badges} />
         <ItemList label='スタンプ帳' items={stampBooks} />
         <ItemList label='その他' items={others} />
       </div>
-    </ProductPageTemplate>
+    </BasePageTemplate>
   )
 }

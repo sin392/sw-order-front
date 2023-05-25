@@ -2,8 +2,10 @@ import styles from './style.module.css'
 
 import { BreadCrumbsItem, IBreadCrumbsItemProps } from '@/components/atoms/breadcrumbs-item'
 
+export type IBreadCrumbsItemListType = IBreadCrumbsItemProps[]
+
 export interface IBreadCrumbsProps {
-  items: IBreadCrumbsItemProps[]
+  items: IBreadCrumbsItemListType
 }
 
 export const BreadCrumbs: React.FC<IBreadCrumbsProps> = ({ items }) => {

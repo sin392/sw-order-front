@@ -1,13 +1,13 @@
 import styles from './style.module.css'
 
-interface IProductPageProps {
+interface IBasePageProps {
   sidebar: React.ReactNode
   header: React.ReactNode
   footer: React.ReactNode
   children: React.ReactNode
 }
 
-export const ProductPageTemplate: React.FC<IProductPageProps> = (props) => {
+export const BasePageTemplate: React.FC<IBasePageProps> = (props) => {
   return (
     <div className={styles.wholeContainer}>
       {props.sidebar}
